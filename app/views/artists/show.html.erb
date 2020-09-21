@@ -1,8 +1,9 @@
-<h2><%= artist.name %></h2>
-<br>
-<h3><%= artist.title %></h3><br>
-<h3><%= artist.age %></h3><br>
-<h3>This artist plays:</h3>
+<h2><%= @artist.name %></h2><br>
+<h3>Also known as: "<%= @artist.title %>"</h3><br>
+<h3>Age: <%= @artist.age %></h3><br>
+<h4><%= @artist.name %> plays the following instrument(s):</h4>
     <ul>
-    <li><%= artist.ArtistInstruments.name %></li>
+        <% @artist.artist_instruments.map do |artist_instrument| %>
+            <li><%= @artist.artist_instrument.name %></li>
+        <% end %>
     </ul>

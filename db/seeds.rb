@@ -8,3 +8,5 @@ Instrument.create(name: "Guitar", classification: "Strings")
 Instrument.create(name: "Violin", classification: "Strings")
 Instrument.create(name: "Flute", classification: "Woodwind")
 Instrument.create(name: "Xylophone", classification: "Percussion")
+
+# Artist_Instrument.create()

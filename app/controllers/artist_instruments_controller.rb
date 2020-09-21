@@ -1,2 +1,2 @@
-class ArtistIngredientsController < ApplicationController
+class ArtistInstrumentsController < ApplicationController
 end

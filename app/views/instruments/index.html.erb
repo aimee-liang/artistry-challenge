@@ -3,6 +3,6 @@
 <br>
 <ul>
 <% @instruments.all.each do |instrument| %>
-    <li>Instrument: <%= @instrument.name %>-<%= @instrument.classification %></li>
+    <li><%= instrument.name %> : <%= instrument.classification %></li>
 <% end %>
 </ul>
