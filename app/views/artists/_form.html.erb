@@ -1,6 +1,6 @@
 <% if flash[:artist_errors] %> 
-    <% flash[:artist_errors].each do |message| %>
-    <p><%= message %></p>
+    <% flash[:artist_errors].each do |error| %>
+    <p><%= error %></p>
     <% end %>
 <% end %>
 

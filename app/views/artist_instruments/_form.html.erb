@@ -1,1 +1,13 @@
-<%= form_for @ %>
+<%= form_for @artist_instrument do |f| %>
+    <br>
+    <%= f.label :artist_name %>
+    <%= f.collection_select :artist_id, Artist.all, :id, :name %>
+    <br>
+    <br>
+    <%= f.label :instrument_name %>
+    <%= f.collection_select :instrument_id, Instrument.all, :id, :name %>
+    <br>
+    <br>
+    <%= f.submit %>
+<% end %>
+    

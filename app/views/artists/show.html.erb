@@ -2,8 +2,6 @@
 <h3>Also known as: "<%= @artist.title %>"</h3><br>
 <h3>Age: <%= @artist.age %></h3><br>
 <h4><%= @artist.name %> plays the following instrument(s):</h4>
-    <ul>
-        <% @artist.artist_instruments.map do |artist_instrument| %>
-            <li><%= @artist.artist_instrument.name %></li>
-        <% end %>
-    </ul>
+    <% @artist.instruments.each do |instrument| %>
+        <p><%= instrument.name %></p>
+    <% end %>
